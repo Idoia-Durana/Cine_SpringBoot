@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+	
+	
+
+
+	
+	<div class="container ">
+<div class=" row justify-content-center align-items-center  mt-5">
+ <div class=" col-5 col-md-6  bg-light border border-secondary px-5 mt-5">
+ 	<h1 class="display-3 my-5 text-center">Login Usuario</h1>
+ 	<form th:action="@{/user/logueado}" th:object="${usu}" method="get">
+	
+		<p >Email: <input class="form-control form-control-sm" type="text" th:field=*{mail}></p> 
+		<p >Password: <input type="password" class="form-control form-control-sm" th:field=*{pass}></p>
+
+		<div class="d-grid gap-2 px-5 mt-5">
+		  <input class="btn btn-primary" type="submit" value="Iniciar Sesion">
+		</div>
+	</form>
+	
+	<form th:action="@{/user/registro}" method="get">
+		<div class="d-grid gap-2 px-5 mt-2 mb-5">
+			  <input class="btn btn-primary" type="submit" value="Registro">
+		  </div>
+	</form>
+ 	<div th:if="${correcto}">
+ 		<div class="alert alert-danger" role="alert">
+		 	Correo o contraseñas incorrectos
+		</div>
+ 	</div>
+ </div>
+</div>
+</div>
+
+	<h3 class="text-center mt-5">Alejandro Fernández Carreras</h3>
+	
+</body>
+</html>

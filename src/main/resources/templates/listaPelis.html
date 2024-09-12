@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+	<h3 class="text-center mt-5">Alejandro Fernández Carreras</h3>
+	
+		<h1 class="text-center mt-4">Lista peliculas de <span th:text="${usuario.nombre}"></span></h1>
+		
+		<div class="container">
+		<div class=" row justify-content-center align-item-center mt-3 mx-5">
+		<table class="table table-hover align-item-center text-center">
+	    <thead>
+	    <tr>
+	        <th>Titulo</th>
+	        <th>Director</th>
+	        <th>Año</th>
+			<th>Duración</th>
+	        <th>Poster</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr th:each="item : ${peliculas}">
+	        <td ><h4><span th:text="${item.Title}"></span></h4>
+				<form th:action="@{/peli/verPelisUsuario}" th:object="${peli}" th:method="get">
+					<input type="hidden"  th:value="${item.Title}"  th:name="Title" th:id="Title" />
+					<input class="btn btn-dark" type="submit" value="i"/>
+				</form>
+	        </td>
+	        <td th:text="${item.director}"></td>
+	        <td th:text="${item.year}"></td>
+			<td th:text="${item.runtime}"></td>
+	        <td><img class="w-25" th:src="${item.poster}"></td>
+	    </tr>  
+	    </tbody>
+	</table>
+	</div>
+		</div>
+	
+
+		
+</body>
+</html>
