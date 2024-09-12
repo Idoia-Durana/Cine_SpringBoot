@@ -1,0 +1,17 @@
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/entity/Usuario.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/dao/IUsuarioDao.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/dao/IPeliculaDao.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/PeticionGetExternalmpl.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/dao/PeliculaDao.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/TrabajoFinalApplication.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/entity/Pelicula.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/component/PeliculaComp.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/component/UsuarioComp.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/IUsuarioService.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/UsuarioServicelmpl.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/IPeticionGetExterna.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/controllers/UsuarioController.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/IPeliculaService.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/controllers/PeliculaController.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/dao/UsuarioDao.java
+/Users/javicarrascal/Downloads/trabajoFinal/src/main/java/com/example/demo/models/service/PeliculaServiceImpl.java
